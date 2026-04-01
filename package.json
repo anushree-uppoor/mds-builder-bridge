@@ -1,1 +1,22 @@
-
+{
+  "name": "@mds/mds-builder-bridge",
+  "version": "1.0.0",
+  "description": "Thin wrappers for MDS components for use with Builder.io and Cursor",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "publish:jfrog": "npm publish --registry https://mckinsey.jfrog.io/artifactory/api/npm/mds-npm/"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "@mds/mds-reactjs-library": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.0"
+  }
+}
